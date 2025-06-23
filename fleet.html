@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet - AirBharat</title>
+    <meta name="description" content="Discover AirBharat's modern fleet of aircraft. State-of-the-art Airbus A350, Boeing 787 Dreamliner, and more for superior comfort and safety.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fleet.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#0066CC">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.svg" alt="AirBharat" class="logo">
+                <span class="logo-text">AirBharat</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="fleet.html" class="active">Fleet</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rebrand-strategy.html">Rebrand Strategy</a></li>
+                <li><a href="brand-guidelines.html">Brand Guidelines</a></li>
+                <li><a href="#" class="book-btn">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="fleet-hero">
+        <div class="container">
+            <h1>Our Modern Fleet</h1>
+            <p class="hero-subtitle">State-of-the-art aircraft engineered for safety, comfort, and efficiency</p>
+            <div class="fleet-stats">
+                <div class="stat">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Aircraft</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5.2</div>
+                    <div class="stat-label">Years Avg Age</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">99.7%</div>
+                    <div class="stat-label">On-time Performance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Overview -->
+    <section class="fleet-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Next-Generation Aircraft</h2>
+                <p>Our commitment to innovation means flying the world's most advanced and environmentally efficient aircraft</p>
+            </div>
+            
+            <div class="aircraft-selector">
+                <button class="aircraft-btn active" data-aircraft="a350">Airbus A350-900</button>
+                <button class="aircraft-btn" data-aircraft="b787">Boeing 787-9</button>
+                <button class="aircraft-btn" data-aircraft="a320neo">Airbus A320neo</button>
+                <button class="aircraft-btn" data-aircraft="b777">Boeing 777-300ER</button>
+            </div>
+
+            <div class="aircraft-display">
+                <!-- Airbus A350-900 -->
+                <div class="aircraft-details active" data-aircraft="a350">
+                    <div class="aircraft-visual">
+                        <div class="aircraft-3d a350-model">
+                            <!-- 3D Aircraft Visualization -->
+                            <svg viewBox="0 0 800 300" class="aircraft-svg">
+                                <!-- Fuselage -->
+                                <ellipse cx="400" cy="150" rx="300" ry="40" fill="#F5F5F7" stroke="#E5E5E7" stroke-width="2"/>
+                                
+                                <!-- Wings -->
+                                <path d="M200 150 Q150 120 100 130 Q80 135 70 150 Q80 165 100 170 Q150 180 200 150" fill="#0066CC" opacity="0.9"/>
+                                <path d="M600 150 Q650 120 700 130 Q720 135 730 150 Q720 165 700 170 Q650 180 600 150" fill="#0066CC" opacity="0.9"/>
+                                
+                                <!-- Tail -->
+                                <path d="M680 150 L750 100 Q760 95 765 105 L765 195 Q760 205 750 200 L680 150" fill="#FF6B35"/>
+                                
+                                <!-- Engines -->
+                                <ellipse cx="180" cy="170" rx="35" ry="15" fill="#86868B"/>
+                                <ellipse cx="620" cy="170" rx="35" ry="15" fill="#86868B"/>
+                                
+                                <!-- Cockpit -->
+                                <path d="M100 140 Q80 145 85 150 Q80 155 100 160 Q120 150 100 140" fill="#1D1D1F"/>
+                                
+                                <!-- AirBharat Livery -->
+                                <text x="400" y="140" text-anchor="middle" fill="#0066CC" font-family="Inter" font-weight="600" font-size="16">AirBharat</text>
+                                
+                                <!-- Registration -->
+                                <text x="600" y="180" text-anchor="middle" fill="#86868B" font-family="Inter" font-size="12">VT-ABC</text>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="aircraft-info">
+                        <h3>Airbus A350-900</h3>
+                        <p class="aircraft-description">The pinnacle of long-haul aviation technology, featuring composite construction, advanced aerodynamics, and unmatched fuel efficiency for intercontinental routes.</p>
+                        
+                        <div class="aircraft-specs">
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <div class="spec-icon">✈️</div>
+                                    <div class="spec-content">
+                                        <h4>Range</h4>
+                                        <p>15,000 km</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">👥</div>
+                                    <div class="spec-content">
+                                        <h4>Capacity</h4>
+                                        <p>325 passengers</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">⚡</div>
+                                    <div class="spec-content">
+                                        <h4>Fuel Efficiency</h4>
+                                        <p>25% more efficient</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">🔇</div>
+                                    <div class="spec-content">
+                                        <h4>Noise Level</h4>
+                                        <p>50% quieter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cabin-classes">
+                            <h4>Cabin Configuration</h4>
+                            <div class="class-layout">
+                                <div class="class-section">
+                                    <span class="class-name">First</span>
+                                    <span class="class-seats">8 seats</span>
+                                </div>
+                                <div class="class-section">
+                                    <span class="class-name">Business</span>
+                                    <span class="class-seats">42 seats</span>
+                                </div>
+                                <div class="class-section">
+                                    <span class="class-name">Premium Economy</span>
+                                    <span class="class-seats">45 seats</span>
+                                </div>
+                                <div class="class-section">
+                                    <span class="class-name">Economy</span>
+                                    <span class="class-seats">230 seats</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boeing 787-9 -->
+                <div class="aircraft-details" data-aircraft="b787">
+                    <div class="aircraft-visual">
+                        <div class="aircraft-3d b787-model">
+                            <svg viewBox="0 0 800 300" class="aircraft-svg">
+                                <!-- Fuselage -->
+                                <ellipse cx="400" cy="150" rx="280" ry="35" fill="#F5F5F7" stroke="#E5E5E7" stroke-width="2"/>
+                                
+                                <!-- Wings (more swept for 787) -->
+                                <path d="M220 150 Q170 115 120 125 Q100 130 90 150 Q100 170 120 175 Q170 185 220 150" fill="#0066CC" opacity="0.9"/>
+                                <path d="M580 150 Q630 115 680 125 Q700 130 710 150 Q700 170 680 175 Q630 185 580 150" fill="#0066CC" opacity="0.9"/>
+                                
+                                <!-- Tail -->
+                                <path d="M660 150 L720 110 Q730 105 735 115 L735 185 Q730 195 720 190 L660 150" fill="#FF6B35"/>
+                                
+                                <!-- Engines (larger for 787) -->
+                                <ellipse cx="200" cy="175" rx="40" ry="18" fill="#86868B"/>
+                                <ellipse cx="600" cy="175" rx="40" ry="18" fill="#86868B"/>
+                                
+                                <!-- Cockpit -->
+                                <path d="M120 140 Q100 145 105 150 Q100 155 120 160 Q140 150 120 140" fill="#1D1D1F"/>
+                                
+                                <!-- AirBharat Livery -->
+                                <text x="400" y="140" text-anchor="middle" fill="#0066CC" font-family="Inter" font-weight="600" font-size="16">AirBharat</text>
+                                
+                                <!-- Registration -->
+                                <text x="580" y="180" text-anchor="middle" fill="#86868B" font-family="Inter" font-size="12">VT-DEF</text>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="aircraft-info">
+                        <h3>Boeing 787-9 Dreamliner</h3>
+                        <p class="aircraft-description">Revolutionary composite aircraft designed for passenger comfort with larger windows, improved air quality, and advanced technology for medium to long-haul routes.</p>
+                        
+                        <div class="aircraft-specs">
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <div class="spec-icon">✈️</div>
+                                    <div class="spec-content">
+                                        <h4>Range</h4>
+                                        <p>14,800 km</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">👥</div>
+                                    <div class="spec-content">
+                                        <h4>Capacity</h4>
+                                        <p>290 passengers</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">💨</div>
+                                    <div class="spec-content">
+                                        <h4>Air Quality</h4>
+                                        <p>HEPA filtration</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">🪟</div>
+                                    <div class="spec-content">
+                                        <h4>Windows</h4>
+                                        <p>65% larger</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cabin-classes">
+                            <h4>Cabin Configuration</h4>
+                            <div class="class-layout">
+                                <div class="class-section">
+                                    <span class="class-name">Business</span>
+                                    <span class="class-seats">30 seats</span>
+                                </div>
+                                <div class="class-section">
+                                    <span class="class-name">Premium Economy</span>
+                                    <span class="class-seats">35 seats</span>
+                                </div>
+                                <div class="class-section">
+                                    <span class="class-name">Economy</span>
+                                    <span class="class-seats">225 seats</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Airbus A320neo -->
+                <div class="aircraft-details" data-aircraft="a320neo">
+                    <div class="aircraft-visual">
+                        <div class="aircraft-3d a320-model">
+                            <svg viewBox="0 0 800 300" class="aircraft-svg">
+                                <!-- Fuselage -->
+                                <ellipse cx="400" cy="150" rx="240" ry="30" fill="#F5F5F7" stroke="#E5E5E7" stroke-width="2"/>
+                                
+                                <!-- Wings -->
+                                <path d="M250 150 Q200 125 150 135 Q130 140 120 150 Q130 160 150 165 Q200 175 250 150" fill="#0066CC" opacity="0.9"/>
+                                <path d="M550 150 Q600 125 650 135 Q670 140 680 150 Q670 160 650 165 Q600 175 550 150" fill="#0066CC" opacity="0.9"/>
+                                
+                                <!-- Tail -->
+                                <path d="M630 150 L680 120 Q690 115 695 125 L695 175 Q690 185 680 180 L630 150" fill="#FF6B35"/>
+                                
+                                <!-- Engines -->
+                                <ellipse cx="230" cy="170" rx="30" ry="12" fill="#86868B"/>
+                                <ellipse cx="570" cy="170" rx="30" ry="12" fill="#86868B"/>
+                                
+                                <!-- Cockpit -->
+                                <path d="M160 140 Q140 145 145 150 Q140 155 160 160 Q180 150 160 140" fill="#1D1D1F"/>
+                                
+                                <!-- AirBharat Livery -->
+                                <text x="400" y="140" text-anchor="middle" fill="#0066CC" font-family="Inter" font-weight="600" font-size="14">AirBharat</text>
+                                
+                                <!-- Registration -->
+                                <text x="520" y="175" text-anchor="middle" fill="#86868B" font-family="Inter" font-size="10">VT-GHI</text>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="aircraft-info">
+                        <h3>Airbus A320neo</h3>
+                        <p class="aircraft-description">The backbone of our domestic fleet, featuring new engine technology for improved efficiency and reduced environmental impact on short to medium-haul routes.</p>
+                        
+                        <div class="aircraft-specs">
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <div class="spec-icon">✈️</div>
+                                    <div class="spec-content">
+                                        <h4>Range</h4>
+                                        <p>6,300 km</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">👥</div>
+                                    <div class="spec-content">
+                                        <h4>Capacity</h4>
+                                        <p>180 passengers</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">🌱</div>
+                                    <div class="spec-content">
+                                        <h4>Emissions</h4>
+                                        <p>15% reduction</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">⚙️</div>
+                                    <div class="spec-content">
+                                        <h4>Technology</h4>
+                                        <p>Fly-by-wire</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cabin-classes">
+                            <h4>Cabin Configuration</h4>
+                            <div class="class-layout">
+                                <div class="class-section">
+                                    <span class="class-name">Business</span>
+                                    <span class="class-seats">12 seats</span>
+                                </div>
+                                <div class="class-section">
+                                    <span class="class-name">Economy</span>
+                                    <span class="class-seats">168 seats</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boeing 777-300ER -->
+                <div class="aircraft-details" data-aircraft="b777">
+                    <div class="aircraft-visual">
+                        <div class="aircraft-3d b777-model">
+                            <svg viewBox="0 0 800 300" class="aircraft-svg">
+                                <!-- Fuselage -->
+                                <ellipse cx="400" cy="150" rx="320" ry="45" fill="#F5F5F7" stroke="#E5E5E7" stroke-width="2"/>
+                                
+                                <!-- Wings -->
+                                <path d="M180 150 Q130 110 80 120 Q60 125 50 150 Q60 175 80 180 Q130 190 180 150" fill="#0066CC" opacity="0.9"/>
+                                <path d="M620 150 Q670 110 720 120 Q740 125 750 150 Q740 175 720 180 Q670 190 620 150" fill="#0066CC" opacity="0.9"/>
+                                
+                                <!-- Tail -->
+                                <path d="M700 150 L770 95 Q780 90 785 100 L785 200 Q780 210 770 205 L700 150" fill="#FF6B35"/>
+                                
+                                <!-- Engines -->
+                                <ellipse cx="160" cy="180" rx="45" ry="20" fill="#86868B"/>
+                                <ellipse cx="640" cy="180" rx="45" ry="20" fill="#86868B"/>
+                                
+                                <!-- Cockpit -->
+                                <path d="M80 140 Q60 145 65 150 Q60 155 80 160 Q100 150 80 140" fill="#1D1D1F"/>
+                                
+                                <!-- AirBharat Livery -->
+                                <text x="400" y="135" text-anchor="middle" fill="#0066CC" font-family="Inter" font-weight="600" font-size="18">AirBharat</text>
+                                
+                                <!-- Registration -->
+                                <text x="620" y="185" text-anchor="middle" fill="#86868B" font-family="Inter" font-size="12">VT-JKL</text>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="aircraft-info">
+                        <h3>Boeing 777-300ER</h3>
+                        <p class="aircraft-description">Our flagship aircraft for ultra-long-haul routes, combining exceptional range with spacious comfort and proven reliability for transcontinental journeys.</p>
+                        
+                        <div class="aircraft-specs">
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <div class="spec-icon">✈️</div>
+                                    <div class="spec-content">
+                                        <h4>Range</h4>
+                                        <p>13,650 km</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">👥</div>
+                                    <div class="spec-content">
+                                        <h4>Capacity</h4>
+                                        <p>396 passengers</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">💪</div>
+                                    <div class="spec-content">
+                                        <h4>Reliability</h4>
+                                        <p>99.3% dispatch</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="spec-item">
+                                    <div class="spec-icon">🏆</div>
+                                    <div class="spec-content">
+                                        <h4>Experience</h4>
+                                        <p>Premium comfort</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cabin-classes">
+                            <h4>Cabin Configuration</h4>
+                            <div class="class-layout">
+                                <div class="class-section">
+                                    <span class="class-name">First</span>
+                                    <span class="class-seats">8 seats</span>
+                                </div>
+                                <div class="class-section">
+                                    <span class="class-name">Business</span>
+                                    <span class="class-seats">49 seats</span>
+                                </div>
+                                <div class="class-section">
+                                    <span class="class-name">Premium Economy</span>
+                                    <span class="class-seats">24 seats</span>
+                                </div>
+                                <div class="class-section">
+                                    <span class="class-name">Economy</span>
+                                    <span class="class-seats">315 seats</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Features -->
+    <section class="fleet-features">
+        <div class="container">
+            <h2>Advanced Features Across Our Fleet</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Enhanced Safety</h3>
+                    <p>Latest avionics, multiple redundant systems, and advanced weather radar for maximum safety assurance.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Connectivity</h3>
+                    <p>High-speed Wi-Fi, personal device entertainment, and power outlets at every seat for seamless connectivity.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Fuel-efficient engines, lightweight materials, and optimized flight paths to minimize environmental impact.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Comfort Innovation</h3>
+                    <p>Ergonomic seating, advanced air filtration, and mood lighting for enhanced passenger wellbeing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maintenance Excellence -->
+    <section class="maintenance-section">
+        <div class="container">
+            <div class="maintenance-content">
+                <div class="maintenance-text">
+                    <h2>Maintenance Excellence</h2>
+                    <p class="lead">Our commitment to safety extends far beyond flight operations. Our world-class maintenance facilities and certified technicians ensure every aircraft meets the highest standards.</p>
+                    
+                    <div class="maintenance-stats">
+                        <div class="maintenance-stat">
+                            <h3>24/7</h3>
+                            <p>Maintenance Operations</p>
+                        </div>
+                        <div class="maintenance-stat">
+                            <h3>500+</h3>
+                            <p>Certified Engineers</p>
+                        </div>
+                        <div class="maintenance-stat">
+                            <h3>99.8%</h3>
+                            <p>Availability Rate</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="maintenance-visual">
+                    <div class="maintenance-diagram">
+                        <div class="check-item">
+                            <div class="check-circle">A</div>
+                            <h4>A-Check</h4>
+                            <p>Every 400-600 flight hours</p>
+                        </div>
+                        <div class="check-item">
+                            <div class="check-circle">B</div>
+                            <h4>B-Check</h4>
+                            <p>Every 6-8 months</p>
+                        </div>
+                        <div class="check-item">
+                            <div class="check-circle">C</div>
+                            <h4>C-Check</h4>
+                            <p>Every 18-24 months</p>
+                        </div>
+                        <div class="check-item">
+                            <div class="check-circle">D</div>
+                            <h4>D-Check</h4>
+                            <p>Every 6-10 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo-white.svg" alt="AirBharat" class="logo">
+                        <span class="logo-text">AirBharat</span>
+                    </div>
+                    <p>India's premier airline, flying the world's most advanced aircraft with uncompromising safety standards.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Aircraft</h3>
+                    <ul>
+                        <li><a href="#a350">Airbus A350-900</a></li>
+                        <li><a href="#b787">Boeing 787-9</a></li>
+                        <li><a href="#a320neo">Airbus A320neo</a></li>
+                        <li><a href="#b777">Boeing 777-300ER</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Fleet Info</h3>
+                    <ul>
+                        <li><a href="#">Seat Maps</a></li>
+                        <li><a href="#">Cabin Features</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Safety</h3>
+                    <ul>
+                        <li><a href="#">Safety Standards</a></li>
+                        <li><a href="#">Maintenance Records</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Safety Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AirBharat. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="index.html">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/fleet.js"></script>
+</body>
+</html>

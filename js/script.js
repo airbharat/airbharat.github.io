@@ -11,6 +11,7 @@ class AirBharatWebsite {
         this.setupDestinationMap();
         this.setupAnimations();
         this.setupAccessibility();
+        this.setupContactForm();
     }
 
     // Navigation functionality
@@ -225,6 +226,78 @@ class AirBharatWebsite {
         document.addEventListener('mousedown', () => {
             document.body.classList.remove('keyboard-nav');
         });
+    }
+
+    // Contact form setup
+    setupContactForm() {
+        const contactForm = document.querySelector('.contact-form');
+        if (!contactForm) return;
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            // Validate required fields
+            const requiredFields = ['firstName', 'lastName', 'email', 'subject', 'message'];
+            const errors = [];
+            
+            requiredFields.forEach(field => {
+                if (!data[field] || data[field].trim() === '') {
+                    errors.push(field);
+                }
+            });
+
+            if (errors.length > 0) {
+                this.showFormError('Please fill in all required fields.');
+                return;
+            }
+
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                this.showFormError('Please enter a valid email address.');
+                return;
+            }
+
+            // Show success message (in a real app, this would send to a server)
+            this.showFormSuccess();
+        });
+    }
+
+    showFormError(message) {
+        this.showFormMessage(message, 'error');
+    }
+
+    showFormSuccess() {
+        this.showFormMessage('Thank you for your message! We\'ll get back to you within 24 hours.', 'success');
+        document.querySelector('.contact-form').reset();
+    }
+
+    showFormMessage(message, type) {
+        // Remove existing messages
+        const existingMessage = document.querySelector('.form-message');
+        if (existingMessage) {
+            existingMessage.remove();
+        }
+
+        // Create and show new message
+        const messageEl = document.createElement('div');
+        messageEl.className = `form-message ${type}`;
+        messageEl.textContent = message;
+        
+        const formActions = document.querySelector('.form-actions');
+        formActions.insertBefore(messageEl, formActions.firstChild);
+
+        // Auto-remove after 5 seconds
+        setTimeout(() => {
+            messageEl.remove();
+        }, 5000);
     }
 
     // Utility functions

@@ -1,0 +1,564 @@
+/* Fleet Page Styles */
+
+.fleet-hero {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--primary-orange) 100%);
+  color: var(--white);
+  padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+  text-align: center;
+}
+
+.fleet-hero h1 {
+  font-size: var(--font-size-hero);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: var(--spacing-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fleet-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Fleet Overview */
+.fleet-overview {
+  padding: var(--spacing-3xl) 0;
+  background: var(--white);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.section-header h2 {
+  font-size: var(--font-size-h1);
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-md);
+}
+
+.section-header p {
+  font-size: 1.125rem;
+  color: var(--medium-gray);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Aircraft Selector */
+.aircraft-selector {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-2xl);
+  flex-wrap: wrap;
+}
+
+.aircraft-btn {
+  padding: var(--spacing-md) var(--spacing-xl);
+  border: 2px solid var(--primary-blue);
+  background: transparent;
+  color: var(--primary-blue);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.aircraft-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-blue);
+  transition: left var(--transition-smooth);
+  z-index: -1;
+}
+
+.aircraft-btn:hover::before,
+.aircraft-btn.active::before {
+  left: 0;
+}
+
+.aircraft-btn:hover,
+.aircraft-btn.active {
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Aircraft Display */
+.aircraft-display {
+  position: relative;
+  min-height: 600px;
+}
+
+.aircraft-details {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all var(--transition-smooth);
+}
+
+.aircraft-details.active {
+  display: grid;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aircraft-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aircraft-3d {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f4fd 100%);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.aircraft-svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Aircraft Models */
+.a350-model {
+  border: 3px solid var(--primary-blue);
+}
+
+.b787-model {
+  border: 3px solid var(--primary-orange);
+}
+
+.a320-model {
+  border: 3px solid var(--accent-gold);
+}
+
+.b777-model {
+  border: 3px solid var(--secondary-blue);
+}
+
+/* Aircraft Info */
+.aircraft-info h3 {
+  font-size: var(--font-size-h2);
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-md);
+}
+
+.aircraft-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Aircraft Specifications */
+.aircraft-specs {
+  margin-bottom: var(--spacing-xl);
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--light-gray);
+  border-radius: var(--border-radius);
+  transition: all var(--transition-smooth);
+}
+
+.spec-item:hover {
+  background: var(--primary-blue);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.spec-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  text-align: center;
+}
+
+.spec-content h4 {
+  margin: 0 0 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.spec-content p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+/* Cabin Classes */
+.cabin-classes h4 {
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-h3);
+}
+
+.class-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.class-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: var(--white);
+  border: 2px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  transition: all var(--transition-smooth);
+}
+
+.class-section:hover {
+  border-color: var(--primary-orange);
+  transform: translateY(-2px);
+}
+
+.class-name {
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-xs);
+  text-align: center;
+}
+
+.class-seats {
+  font-size: 0.875rem;
+  color: var(--medium-gray);
+  text-align: center;
+}
+
+/* Fleet Features */
+.fleet-features {
+  padding: var(--spacing-3xl) 0;
+  background: var(--light-gray);
+}
+
+.fleet-features h2 {
+  text-align: center;
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-2xl);
+  font-size: var(--font-size-h1);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.feature-card {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-smooth);
+  border-top: 4px solid var(--primary-orange);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.feature-card h3 {
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-h3);
+}
+
+.feature-card p {
+  color: var(--dark-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Maintenance Section */
+.maintenance-section {
+  padding: var(--spacing-3xl) 0;
+  background: var(--white);
+}
+
+.maintenance-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.maintenance-text h2 {
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-h1);
+}
+
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  margin-bottom: var(--spacing-xl);
+}
+
+.maintenance-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.maintenance-stat {
+  text-align: center;
+}
+
+.maintenance-stat h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin-bottom: var(--spacing-xs);
+}
+
+.maintenance-stat p {
+  color: var(--medium-gray);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.maintenance-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.maintenance-diagram {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 400px;
+}
+
+.check-item {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background: var(--light-gray);
+  border-radius: var(--border-radius-lg);
+  transition: all var(--transition-smooth);
+}
+
+.check-item:hover {
+  background: var(--primary-blue);
+  color: var(--white);
+  transform: translateY(-4px);
+}
+
+.check-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--primary-orange);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto var(--spacing-md);
+}
+
+.check-item h4 {
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.125rem;
+}
+
+.check-item p {
+  margin: 0;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+/* Navigation active state */
+.nav-menu a.active {
+  color: var(--primary-orange);
+  font-weight: 600;
+}
+
+/* Aircraft Animations */
+@keyframes aircraft-fly-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.aircraft-details.active .aircraft-3d {
+  animation: aircraft-fly-in 0.8s ease-out;
+}
+
+@keyframes info-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.aircraft-details.active .aircraft-info {
+  animation: info-fade-in 0.6s ease-out 0.2s both;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fleet-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .fleet-stats {
+    gap: var(--spacing-md);
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .aircraft-selector {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .aircraft-btn {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .aircraft-details {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .aircraft-details.active {
+    display: block;
+  }
+  
+  .spec-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .class-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .maintenance-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .maintenance-stats {
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+  
+  .maintenance-diagram {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .fleet-stats {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .aircraft-selector {
+    gap: var(--spacing-sm);
+  }
+  
+  .aircraft-btn {
+    width: 180px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
+  }
+  
+  .class-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .maintenance-stats {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .maintenance-diagram {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - AirBharat</title>
+    <meta name="description" content="Explore AirBharat's destinations across India and around the world. From vibrant Indian cities to global hubs, discover where AirBharat can take you.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/destinations.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#0066CC">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.svg" alt="AirBharat" class="logo">
+                <span class="logo-text">AirBharat</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="fleet.html">Fleet</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rebrand-strategy.html">Rebrand Strategy</a></li>
+                <li><a href="brand-guidelines.html">Brand Guidelines</a></li>
+                <li><a href="#" class="book-btn">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="destinations-hero">
+        <div class="container">
+            <h1>Connecting India to the World</h1>
+            <p class="hero-subtitle">Discover our extensive network spanning vibrant Indian cities and premier global destinations</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Destinations</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Daily Flights</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Destinations</button>
+                <button class="filter-btn" data-filter="domestic">Domestic</button>
+                <button class="filter-btn" data-filter="international">International</button>
+                <button class="filter-btn" data-filter="popular">Most Popular</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Our Global Network</h2>
+            <div class="map-container">
+                <div class="world-map">
+                    <!-- SVG World Map with flight routes -->
+                    <svg viewBox="0 0 1000 500" class="map-svg">
+                        <!-- Simplified world map paths -->
+                        <path d="M200,150 Q250,120 300,140 L350,130 Q400,140 450,160 L500,155 Q550,170 580,180 L620,175 Q680,185 720,200 L750,195 Q800,210 850,220" 
+                              class="continent" fill="#E5E5E7" stroke="#D1D1D6" stroke-width="1"/>
+                        
+                        <!-- Flight Routes -->
+                        <path d="M400,250 Q500,200 600,250" class="flight-route" stroke="#0066CC" stroke-width="2" fill="none" opacity="0.6"/>
+                        <path d="M400,250 Q350,180 250,200" class="flight-route" stroke="#FF6B35" stroke-width="2" fill="none" opacity="0.6"/>
+                        <path d="M400,250 Q550,300 700,280" class="flight-route" stroke="#0066CC" stroke-width="2" fill="none" opacity="0.6"/>
+                        <path d="M400,250 Q450,150 550,180" class="flight-route" stroke="#FF6B35" stroke-width="2" fill="none" opacity="0.6"/>
+                        
+                        <!-- Destination Points -->
+                        <g class="destination-point" data-city="Delhi">
+                            <circle cx="400" cy="250" r="8" fill="#0066CC" class="city-dot"/>
+                            <circle cx="400" cy="250" r="15" fill="none" stroke="#0066CC" stroke-width="2" opacity="0.3" class="pulse"/>
+                            <text x="415" y="245" class="city-label">Delhi</text>
+                        </g>
+                        
+                        <g class="destination-point" data-city="Mumbai">
+                            <circle cx="390" cy="280" r="6" fill="#FF6B35" class="city-dot"/>
+                            <text x="405" y="275" class="city-label">Mumbai</text>
+                        </g>
+                        
+                        <g class="destination-point" data-city="Bangalore">
+                            <circle cx="410" cy="310" r="6" fill="#FF6B35" class="city-dot"/>
+                            <text x="425" y="305" class="city-label">Bangalore</text>
+                        </g>
+                        
+                        <g class="destination-point" data-city="London">
+                            <circle cx="250" cy="200" r="6" fill="#0066CC" class="city-dot"/>
+                            <text x="265" y="195" class="city-label">London</text>
+                        </g>
+                        
+                        <g class="destination-point" data-city="New York">
+                            <circle cx="150" cy="220" r="6" fill="#0066CC" class="city-dot"/>
+                            <text x="165" y="215" class="city-label">New York</text>
+                        </g>
+                        
+                        <g class="destination-point" data-city="Singapore">
+                            <circle cx="600" cy="350" r="6" fill="#0066CC" class="city-dot"/>
+                            <text x="615" y="345" class="city-label">Singapore</text>
+                        </g>
+                        
+                        <g class="destination-point" data-city="Dubai">
+                            <circle cx="350" cy="280" r="6" fill="#0066CC" class="city-dot"/>
+                            <text x="365" y="275" class="city-label">Dubai</text>
+                        </g>
+                        
+                        <g class="destination-point" data-city="Tokyo">
+                            <circle cx="700" cy="240" r="6" fill="#0066CC" class="city-dot"/>
+                            <text x="715" y="235" class="city-label">Tokyo</text>
+                        </g>
+                    </svg>
+                </div>
+                
+                <div class="map-legend">
+                    <div class="legend-item">
+                        <div class="legend-dot domestic"></div>
+                        <span>Domestic Destinations</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-dot international"></div>
+                        <span>International Destinations</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-line"></div>
+                        <span>Flight Routes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations-grid-section">
+        <div class="container">
+            <div class="destinations-grid">
+                <!-- Domestic Destinations -->
+                <div class="destination-card domestic popular" data-category="domestic">
+                    <div class="destination-image delhi"></div>
+                    <div class="destination-content">
+                        <h3>Delhi</h3>
+                        <p class="destination-subtitle">National Capital Territory</p>
+                        <p class="destination-description">Experience the heart of India with its rich history, vibrant culture, and political significance.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">12 daily flights</span>
+                            <span class="flight-duration">Base hub</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <div class="destination-card domestic popular" data-category="domestic">
+                    <div class="destination-image mumbai"></div>
+                    <div class="destination-content">
+                        <h3>Mumbai</h3>
+                        <p class="destination-subtitle">Financial Capital</p>
+                        <p class="destination-description">The bustling metropolis that never sleeps, home to Bollywood and India's financial center.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">10 daily flights</span>
+                            <span class="flight-duration">2h 15m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <div class="destination-card domestic popular" data-category="domestic">
+                    <div class="destination-image bangalore"></div>
+                    <div class="destination-content">
+                        <h3>Bangalore</h3>
+                        <p class="destination-subtitle">Silicon Valley of India</p>
+                        <p class="destination-description">The tech hub of India with pleasant weather, innovative spirit, and garden city charm.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">8 daily flights</span>
+                            <span class="flight-duration">2h 30m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <div class="destination-card domestic" data-category="domestic">
+                    <div class="destination-image chennai"></div>
+                    <div class="destination-content">
+                        <h3>Chennai</h3>
+                        <p class="destination-subtitle">Gateway to South India</p>
+                        <p class="destination-description">Rich Tamil culture, classical music, and the beautiful Marina Beach await you.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">6 daily flights</span>
+                            <span class="flight-duration">2h 45m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <div class="destination-card domestic" data-category="domestic">
+                    <div class="destination-image kolkata"></div>
+                    <div class="destination-content">
+                        <h3>Kolkata</h3>
+                        <p class="destination-subtitle">City of Joy</p>
+                        <p class="destination-description">Cultural capital with literary heritage, art, and the warmth of Bengali hospitality.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">5 daily flights</span>
+                            <span class="flight-duration">2h 10m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <div class="destination-card domestic" data-category="domestic">
+                    <div class="destination-image goa"></div>
+                    <div class="destination-content">
+                        <h3>Goa</h3>
+                        <p class="destination-subtitle">Beach Paradise</p>
+                        <p class="destination-description">Pristine beaches, Portuguese heritage, and laid-back coastal lifestyle.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">4 daily flights</span>
+                            <span class="flight-duration">2h 20m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <!-- International Destinations -->
+                <div class="destination-card international popular" data-category="international">
+                    <div class="destination-image london"></div>
+                    <div class="destination-content">
+                        <h3>London</h3>
+                        <p class="destination-subtitle">United Kingdom</p>
+                        <p class="destination-description">Historic charm meets modern sophistication in this global financial and cultural hub.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">2 daily flights</span>
+                            <span class="flight-duration">9h 30m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <div class="destination-card international popular" data-category="international">
+                    <div class="destination-image newyork"></div>
+                    <div class="destination-content">
+                        <h3>New York</h3>
+                        <p class="destination-subtitle">United States</p>
+                        <p class="destination-description">The city that never sleeps, offering world-class culture, business, and entertainment.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">1 daily flight</span>
+                            <span class="flight-duration">15h 45m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <div class="destination-card international popular" data-category="international">
+                    <div class="destination-image singapore"></div>
+                    <div class="destination-content">
+                        <h3>Singapore</h3>
+                        <p class="destination-subtitle">Southeast Asia Hub</p>
+                        <p class="destination-description">Modern city-state known for its efficiency, multicultural harmony, and culinary excellence.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">3 daily flights</span>
+                            <span class="flight-duration">5h 30m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <div class="destination-card international" data-category="international">
+                    <div class="destination-image dubai"></div>
+                    <div class="destination-content">
+                        <h3>Dubai</h3>
+                        <p class="destination-subtitle">United Arab Emirates</p>
+                        <p class="destination-description">Futuristic skyline, luxury shopping, and world-class hospitality in the desert.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">4 daily flights</span>
+                            <span class="flight-duration">3h 15m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <div class="destination-card international" data-category="international">
+                    <div class="destination-image tokyo"></div>
+                    <div class="destination-content">
+                        <h3>Tokyo</h3>
+                        <p class="destination-subtitle">Japan</p>
+                        <p class="destination-description">Where ancient traditions seamlessly blend with cutting-edge technology and innovation.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">2 daily flights</span>
+                            <span class="flight-duration">7h 20m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+
+                <div class="destination-card international" data-category="international">
+                    <div class="destination-image paris"></div>
+                    <div class="destination-content">
+                        <h3>Paris</h3>
+                        <p class="destination-subtitle">France</p>
+                        <p class="destination-description">The City of Light, renowned for its art, fashion, cuisine, and romantic atmosphere.</p>
+                        <div class="destination-stats">
+                            <span class="flight-frequency">1 daily flight</span>
+                            <span class="flight-duration">9h 45m</span>
+                        </div>
+                        <button class="destination-cta">Book Flight</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="destination-services">
+        <div class="container">
+            <h2>Enhanced Travel Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎫</div>
+                    <h3>Flexible Booking</h3>
+                    <p>Easy date changes and cancellations with our flexible booking policies designed for your convenience.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏨</div>
+                    <h3>Hotel Partnerships</h3>
+                    <p>Exclusive deals with premium hotels at all destinations for seamless travel planning.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Ground Transportation</h3>
+                    <p>Pre-arranged transfers and car rental services to complete your journey door-to-door.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Local Experiences</h3>
+                    <p>Curated local tours and experiences to help you discover the best of each destination.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo-white.svg" alt="AirBharat" class="logo">
+                        <span class="logo-text">AirBharat</span>
+                    </div>
+                    <p>India's premier airline, connecting the nation to the world with unparalleled service and safety.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Routes</h3>
+                    <ul>
+                        <li><a href="#">Delhi → Mumbai</a></li>
+                        <li><a href="#">Mumbai → London</a></li>
+                        <li><a href="#">Delhi → New York</a></li>
+                        <li><a href="#">Bangalore → Singapore</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Travel Planning</h3>
+                    <ul>
+                        <li><a href="#">Flight Status</a></li>
+                        <li><a href="#">Check-in</a></li>
+                        <li><a href="#">Baggage Info</a></li>
+                        <li><a href="#">Travel Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Special Assistance</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AirBharat. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="index.html">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/destinations.js"></script>
+</body>
+</html>
