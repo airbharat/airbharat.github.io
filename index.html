@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBharat - India's New Sky</title>
+    <meta name="description" content="AirBharat - India's premier airline reborn. Experience modern luxury, safety, and world-class service connecting India to the world.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#0066CC">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.svg" alt="AirBharat" class="logo">
+                <span class="logo-text">AirBharat</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#fleet">Fleet</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="book-btn">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">India's New Sky</h1>
+            <p class="hero-subtitle">Experience the future of aviation with AirBharat. Where tradition meets innovation, and every journey becomes extraordinary.</p>
+            <div class="hero-actions">
+                <button class="cta-primary">Explore Destinations</button>
+                <button class="cta-secondary">Watch Our Story</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="aircraft-silhouette"></div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Redefining Air Travel</h2>
+                <p>Every detail crafted for your comfort and peace of mind</p>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <circle cx="12" cy="12" r="9"/>
+                        </svg>
+                    </div>
+                    <h3>Uncompromising Safety</h3>
+                    <p>State-of-the-art safety protocols and the newest fleet with advanced technology ensuring your security at every altitude.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Premium Comfort</h3>
+                    <p>Thoughtfully designed cabins with ergonomic seating, premium amenities, and personalized service that exceeds expectations.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>On-Time Excellence</h3>
+                    <p>Precision operations and smart logistics ensure punctuality, because your time is precious and we respect it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <div class="section-header">
+                <h2>Modern Fleet</h2>
+                <p>The newest generation of aircraft for superior performance</p>
+            </div>
+            <div class="fleet-showcase">
+                <div class="fleet-card active">
+                    <div class="fleet-image">
+                        <div class="aircraft-placeholder a350"></div>
+                    </div>
+                    <div class="fleet-info">
+                        <h3>Airbus A350-900</h3>
+                        <p>Long-haul excellence with fuel efficiency and passenger comfort at the forefront.</p>
+                        <div class="fleet-specs">
+                            <span>Range: 15,000 km</span>
+                            <span>Capacity: 325 passengers</span>
+                            <span>Fuel efficient: -25%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                        <div class="aircraft-placeholder b787"></div>
+                    </div>
+                    <div class="fleet-info">
+                        <h3>Boeing 787 Dreamliner</h3>
+                        <p>Revolutionary design with enhanced passenger experience and environmental efficiency.</p>
+                        <div class="fleet-specs">
+                            <span>Range: 14,800 km</span>
+                            <span>Capacity: 290 passengers</span>
+                            <span>Quieter: -60%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Connect the World</h2>
+                <p>From India's vibrant cities to global destinations</p>
+            </div>
+            <div class="destinations-map">
+                <div class="destination-pin" style="top: 25%; left: 70%;" data-city="Delhi">
+                    <div class="pin"></div>
+                    <span>Delhi</span>
+                </div>
+                <div class="destination-pin" style="top: 45%; left: 75%;" data-city="Mumbai">
+                    <div class="pin"></div>
+                    <span>Mumbai</span>
+                </div>
+                <div class="destination-pin" style="top: 65%; left: 78%;" data-city="Bangalore">
+                    <div class="pin"></div>
+                    <span>Bangalore</span>
+                </div>
+                <div class="destination-pin" style="top: 30%; left: 20%;" data-city="London">
+                    <div class="pin"></div>
+                    <span>London</span>
+                </div>
+                <div class="destination-pin" style="top: 40%; left: 15%;" data-city="New York">
+                    <div class="pin"></div>
+                    <span>New York</span>
+                </div>
+                <div class="destination-pin" style="top: 50%; left: 85%;" data-city="Singapore">
+                    <div class="pin"></div>
+                    <span>Singapore</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>A New Dawn for Indian Aviation</h2>
+                    <p>AirBharat represents the rebirth of India's national carrier, built on the foundation of trust, innovation, and excellence. We're not just an airline; we're India's wings to the world.</p>
+                    <p>With our commitment to safety, sustainability, and service, we're creating a new standard for air travel that reflects the best of modern India while honoring our rich heritage.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Destinations</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Modern Aircraft</p>
+                        </div>
+                        <div class="stat">
+                            <h3>99.5%</h3>
+                            <p>Safety Rating</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="vision-card">
+                        <h3>Our Vision</h3>
+                        <p>To be the world's most trusted airline, connecting India to the globe with unparalleled service and safety.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo-white.svg" alt="AirBharat" class="logo">
+                        <span class="logo-text">AirBharat</span>
+                    </div>
+                    <p>India's premier airline, redefining air travel with innovation, safety, and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Travel</h3>
+                    <ul>
+                        <li><a href="#">Book Flights</a></li>
+                        <li><a href="#">Manage Booking</a></li>
+                        <li><a href="#">Check-in</a></li>
+                        <li><a href="#">Flight Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Experience</h3>
+                    <ul>
+                        <li><a href="#">Our Fleet</a></li>
+                        <li><a href="#">Cabin Classes</a></li>
+                        <li><a href="#">In-flight Services</a></li>
+                        <li><a href="#">Destinations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Travel Guidelines</a></li>
+                        <li><a href="#">Special Assistance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AirBharat. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

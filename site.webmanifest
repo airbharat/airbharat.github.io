@@ -1,0 +1,28 @@
+{
+  "name": "AirBharat - India's New Sky",
+  "short_name": "AirBharat",
+  "description": "AirBharat - India's premier airline reborn. Experience modern luxury, safety, and world-class service connecting India to the world.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0066CC",
+  "theme_color": "#0066CC",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["travel", "business", "lifestyle"],
+  "lang": "en",
+  "scope": "/",
+  "related_applications": [],
+  "prefer_related_applications": false
+}

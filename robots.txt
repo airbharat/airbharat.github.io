@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://airbharat.tarushv.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow any sensitive directories (none for this project)
+# Disallow: /admin/
+# Disallow: /private/

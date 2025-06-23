@@ -1,0 +1,16 @@
+<!-- This is a placeholder. In production, you would need to convert the SVG favicon to ICO format -->
+<!-- For now, the SVG favicon will work in modern browsers -->
+<!-- To create a proper favicon.ico, use tools like favicon.io or realfavicongenerator.net -->
+
+<!-- Favicon meta tags for the HTML head -->
+<!--
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+-->
+
+<!-- The current implementation uses SVG favicon which works in modern browsers -->
+<!-- For IE support, convert the SVG to ICO format -->

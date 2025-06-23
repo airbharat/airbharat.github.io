@@ -1,0 +1,21 @@
+<svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wing Symbol -->
+  <g transform="translate(5, 8)">
+    <!-- Main wing shape -->
+    <path d="M0 12 Q8 8 16 10 Q20 11 24 12 Q20 13 16 14 Q8 16 0 12Z" fill="#FFFFFF"/>
+    <!-- Wing detail lines -->
+    <path d="M2 12 Q6 10 10 11 Q14 12 18 12" stroke="#FF6B35" stroke-width="1" fill="none"/>
+    <path d="M4 13 Q8 12 12 12.5 Q16 13 20 13" stroke="#FFB700" stroke-width="0.5" fill="none"/>
+    <!-- Geometric pattern detail -->
+    <circle cx="6" cy="12" r="1" fill="#FF6B35" opacity="0.8"/>
+    <circle cx="12" cy="11.5" r="0.8" fill="#FFB700" opacity="0.6"/>
+    <circle cx="18" cy="12.5" r="0.6" fill="#FF6B35" opacity="0.4"/>
+  </g>
+  
+  <!-- Brand Text -->
+  <text x="35" y="16" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Air</text>
+  <text x="35" y="28" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Bharat</text>
+  
+  <!-- Decorative accent -->
+  <rect x="32" y="18" width="2" height="6" fill="#FF6B35" rx="1"/>
+</svg>
